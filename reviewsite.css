@@ -2,53 +2,62 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
 
 .hero-section{
    
-    margin: 222px auto;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    overflow: hidden;
+    margin: 233px auto;
+    grid-template-columns: repeat(5,300px);
+    padding: 9px 15px;
+    column-gap: 13px;
+  
 }
-.items1{
-    border: 2px solid rgb(221, 220, 220);
-    box-shadow: 4px 5px 13px 5px rgb(244, 241, 241);
+.card1{
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+   
+   
+
+.row{
+    display: flex;
+    border:1px solid white;
+  
+
+}
+.name-section{
+    display: flex;
+   
+}
+.name{
+    padding: 7px;
+    display: flex;
+    
+}
+.ratings{
+    display: flex;
 }
 .image-section{
+    display: flex;
+  
+    width: 50%;
     
-    max-width: 80%;
-    max-height: 60%;
+    justify-content: center;
+}
+.name-section{
+    display: flex;
+    border: 2px solid green;
+    width: 50%;
 }
 .images{
-    max-width: 50%;
+    width: 60%;
     border-radius: 50%;
-
-}
-.text{
-    border: 1px solid yellow;
-    position: absolute;
-  left: 10%;
-  top: 17%;
 }
 
-@media(max-width:700px){
-    .hero-section{
-        display: grid;
-        grid-template-columns: repea(5,600px);
-        overflow: auto;
-    }
-    .images{
-        max-width: 65%;
-        border-radius: 50%;
-    
-    }
-    .review{
-        font-size: 30%;
-    }
-    
+.review{
+    padding: 3px;
 }
